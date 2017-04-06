@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  * @date 2017/4/5 15:28
  * *****************************************
  */
-@Component
+//@Component
 public class JerseyConfig extends ResourceConfig {
     public JerseyConfig() {
         register(UserResource.class);

@@ -43,7 +43,7 @@ public class User {
 
     private boolean vip;
 
-    @Pattern(regexp = "^((13[0-9])|(15[^4,\\\\D])|(18[0,5-9]))\\\\d{8}$")
+    @Pattern(regexp = "^1[0-9]{10}$")
     private String phone;
 
     @Email

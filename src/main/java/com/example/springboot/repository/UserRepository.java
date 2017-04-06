@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
  * @date 2017/4/1 17:22
  * *****************************************
  */
-@Repository
+//@Repository
 @RepositoryRestResource(collectionResourceRel = "users", path = "users")
 public interface UserRepository extends PagingAndSortingRepository<User,Long> {
 }

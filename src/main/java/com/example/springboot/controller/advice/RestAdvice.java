@@ -20,7 +20,6 @@ import javax.validation.ConstraintViolationException;
 @RestControllerAdvice("com.example.springboot.controller")
 public class RestAdvice {
 
-    @ResponseBody
     @ResponseStatus(value= HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ErrorResult handleMethodArgumentNotValidException(MethodArgumentNotValidException ex, HttpServletRequest request){
@@ -30,7 +29,6 @@ public class RestAdvice {
         return response;
     }
 
-    @ResponseBody
     @ResponseStatus(value= HttpStatus.BAD_REQUEST)
     @ExceptionHandler({ConstraintViolationException.class})
     public ErrorResult handleConstraintViolationException(ConstraintViolationException ex){
